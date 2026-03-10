@@ -1,0 +1,52 @@
+Java Collections – Overview
+
+The Java Collections Framework (JCF) is a set of classes and interfaces used to store, manage, and manipulate groups of objects efficiently.
+
+It provides different data structures and algorithms to perform operations such as searching, sorting, inserting, and deleting data.
+
+Main Interfaces in Java Collections:
+
+1. List
+   - Stores elements in an ordered sequence.
+   - Allows duplicate elements.
+   - Example implementations: ArrayList, LinkedList, Vector.
+
+2. Set
+   - Stores unique elements.
+   - Does not allow duplicate values.
+   - Example implementations: HashSet, LinkedHashSet, TreeSet.
+
+3. Queue
+   - Used to process elements in a specific order (usually FIFO).
+   - Example implementations: PriorityQueue, ArrayDeque.
+
+4. Map
+   - Stores data in key-value pairs.
+   - Keys must be unique.
+   - Example implementations: HashMap, LinkedHashMap, TreeMap.
+
+Example Program:
+
+import java.util.*;
+
+public class CollectionExample {
+    public static void main(String[] args) {
+
+        List<String> list = new ArrayList<>();
+
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+
+        System.out.println(list);
+    }
+}
+
+Advantages of Java Collections:
+- Provides ready-to-use data structures.
+- Improves code reusability.
+- Supports dynamic data storage.
+- Includes built-in algorithms for sorting and searching.
+
+Conclusion:
+The Java Collections Framework helps developers efficiently manage groups of objects and perform common data operations easily.
