@@ -1,0 +1,50 @@
+Java Map – Overview
+
+A Map in Java is a data structure that stores elements in key-value pairs.
+Each key in a Map must be unique, while multiple keys can map to the same value.
+
+Key Characteristics:
+1. Stores data in key-value format.
+2. Keys must be unique.
+3. Each key maps to exactly one value.
+4. Values can be duplicated.
+
+Common Implementations of Map:
+1. HashMap
+   - Stores elements in no particular order.
+   - Allows one null key and multiple null values.
+   - Not synchronized.
+
+2. LinkedHashMap
+   - Maintains insertion order.
+   - Allows one null key and multiple null values.
+
+3. TreeMap
+   - Stores keys in sorted order.
+   - Does not allow null keys.
+
+Basic Example:
+
+import java.util.*;
+
+public class MapExample {
+    public static void main(String[] args) {
+        Map<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Mango");
+
+        System.out.println(map);
+    }
+}
+
+Common Methods:
+put()     - Adds key-value pair
+get()     - Retrieves value using key
+remove()  - Removes entry
+containsKey() - Checks if key exists
+size()    - Returns number of entries
+
+Conclusion:
+Java Map is useful for storing and retrieving data efficiently using keys.
